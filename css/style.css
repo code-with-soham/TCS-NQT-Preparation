@@ -1,0 +1,97 @@
+:root {
+      --pdf-navy: #0F1E36;
+      --pdf-navy-card: #162844;
+      --pdf-navy-border: #2B4268;
+      --pdf-mint: #2DD4BF;
+      --pdf-mint-bg: #E6F7F2;
+      --pdf-mint-border: #A7F3D0;
+      --pdf-teal-dark: #0F766E;
+      --pdf-blue-link: #1D4ED8;
+      --pdf-ice-bg: #EFF6FF;
+      --pdf-ice-border: #BFDBFE;
+      --pdf-sand-bg: #FEFCE8;
+      --pdf-sand-border: #FDE68A;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #F4F6F9;
+      color: #0F1E36;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    code, pre, .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .pdf-navy-bg { background-color: #0F1E36; }
+    .pdf-navy-card { background-color: #162844; border: 1px solid #2B4268; }
+    .pdf-mint-text { color: #2DD4BF; }
+    .pdf-mint-btn {
+      background-color: #E6F7F2;
+      color: #0F766E;
+      border: 1px solid #99F6E4;
+      transition: all 0.15s ease;
+    }
+    .pdf-mint-btn:hover {
+      background-color: #CCFBF1;
+      transform: translateY(-1px);
+    }
+    .pdf-link {
+      color: #1D4ED8;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .pdf-link:hover {
+      color: #1E40AF;
+      text-decoration: underline;
+    }
+    .warmup-card { border-left: 5px solid #10B981; }
+    .core-card { border-left: 5px solid #2563EB; }
+    .challenge-card { border-left: 5px solid #F59E0B; }
+    .pdf-checkbox {
+      width: 22px;
+      height: 22px;
+      accent-color: #0F766E;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .pdf-checkbox-lg {
+      width: 28px;
+      height: 28px;
+      accent-color: #10B981;
+      cursor: pointer;
+    }
+    .cal-cell {
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+    .cal-cell:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px -4px rgba(15, 30, 54, 0.12);
+      border-color: #0D9488 !important;
+    }
+    .hero-art-box {
+      background: linear-gradient(145deg, #162844 0%, #112038 100%);
+      border-radius: 36px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-art-box::after {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      background: repeating-linear-gradient(
+        -55deg,
+        transparent,
+        transparent 18px,
+        rgba(45, 212, 191, 0.12) 18px,
+        rgba(45, 212, 191, 0.12) 20px
+      );
+      pointer-events: none;
+    }
+    @media print {
+      .no-print { display: none !important; }
+    }
